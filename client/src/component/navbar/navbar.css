@@ -1,0 +1,82 @@
+.navbar {
+    color: white;
+    font-size: 14px;
+    background-color: black;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%);
+    /* background: linear-gradient(to top, transparent 0%, rgb(0, 0, 0, 0.3) 50%); */
+}
+
+.navbar-scrolled {
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.container {
+    padding: 0px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 25px;
+    width: auto;
+    margin-right: 40px;
+}
+
+.left>span {
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    margin: 0px 15px;
+    cursor: pointer;
+}
+
+.logoprofile {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+
+/* .profile {} */
+
+.options {
+    display: none;
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+.options::after {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+
+.options>span {
+    padding: 10px;
+    cursor: pointer;
+}
